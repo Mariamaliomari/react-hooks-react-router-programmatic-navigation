@@ -10,19 +10,19 @@ function App() {
 
   return (
     <div>
-      <Navbar setIsLoggedIn={setIsLoggedIn} />
-      <Switch>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/login">
-          <Login setIsLoggedIn={setIsLoggedIn} />
-        </Route>
-        <Route exact path="/">
-          <Home isLoggedIn={isLoggedIn} />
-        </Route>
-      </Switch>
-    </div>
+    <Navbar setIsLoggedIn={setIsLoggedIn} />
+    <Switch>
+      <Route exact path="/about">
+        <About />
+      </Route>
+      <Route exact path="/login">
+        <Login setIsLoggedIn={setIsLoggedIn} />
+      </Route>
+      <Route exact path="/">
+        <Home isLoggedIn={isLoggedIn} />
+      </Route>
+    </Switch>
+  </div>
   );
 }
 
